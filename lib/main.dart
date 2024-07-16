@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tic_tac_toe/screens/create_room.dart';
+import 'package:tic_tac_toe/screens/join_room.dart';
 import 'package:tic_tac_toe/screens/main_menu.dart';
 import 'package:tic_tac_toe/utils/colors.dart';
 
@@ -21,7 +23,9 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.luckiestGuyTextTheme(),
       ),
       routes: {
-          MainMenuScreen.routeName:(context)=>const MainMenuScreen()
+          MainMenuScreen.routeName:(context)=>const MainMenuScreen(),
+          JoinRoomScreen.routeName:(context) => const JoinRoomScreen(),
+          CreateRoomScreen.routeName:(context)=>const CreateRoomScreen()
       },
       home: const MainMenuScreen(),
     );
